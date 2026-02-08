@@ -14,6 +14,7 @@ h1 {
 }
 
 body {
+  
   overflow-x: hidden; /* prevents scrollbar during shake */
 }
 
