@@ -14,13 +14,18 @@ h1 {
 }
 
 body {
-  
+  margin: 0;
+  background: #000000;
   overflow-x: hidden; /* prevents scrollbar during shake */
 }
 
 .page {
-  max-width: 1200px;  /* controls layout width */
-  margin: 0 auto;     /* centers the layout */
+  min-height: 100svh;
+  max-width: 1200px;
+  margin: auto;             /* centers horizontally */
+  display: flex;
+  align-items: center;      /* vertical */
+  justify-content: center;  /* horizontal */
   padding: 20px;
   background: white;
 }
