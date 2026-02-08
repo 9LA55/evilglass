@@ -1,0 +1,35 @@
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 150px;
+}
+
+.heart {
+  width: 700px;
+  height: auto;
+}
+
+#myImage {
+  cursor: pointer;
+}
+
+body {
+  
+  overflow-x: hidden; /* prevents scrollbar during shake */
+}
+
+/* Screen shake animation */
+@keyframes screenShake {
+  0%   { transform: translate(0, 0); }
+  15%  { transform: translate(-90px, 0); }
+  30%  { transform: translate(8px, 0); }
+  45%  { transform: translate(-8px, 0); }
+  60%  { transform: translate(8px, 0); }
+  75%  { transform: translate(-4px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.shake-screen {
+  animation: screenShake 0.5s;
+  will-change: transform;
+}
