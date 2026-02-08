@@ -18,6 +18,13 @@ body {
   overflow-x: hidden; /* prevents scrollbar during shake */
 }
 
+.page {
+  max-width: 1200px;  /* controls layout width */
+  margin: 0 auto;     /* centers the layout */
+  padding: 20px;
+  background: white;
+}
+
 /* Screen shake animation */
 @keyframes screenShake {
   0%   { transform: translate(0, 0); }
