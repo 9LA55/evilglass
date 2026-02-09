@@ -4,9 +4,14 @@ h1 {
   font-size: 150px;
 }
 
+
 .heart {
-  width: 700px;
-  height: auto;
+ 
+  margin-inline: auto;
+  width: clamp(150px, 60vh, 800px);
+  display: flex;
+  flex-direction: column;   /* top → bottom */
+  align-items: center;      /* center horizontally */
 }
 
 #myImage {
@@ -14,20 +19,20 @@ h1 {
 }
 
 body {
-  margin: 0;
+  margin: 35px;
   background: #000000;
-  overflow-x: hidden; /* prevents scrollbar during shake */
+  overflow: hidden; /* prevents scrollbar during shake */
 }
 
-.page {
+.screen {
   min-height: 100svh;
   max-width: 1200px;
   margin: auto;             /* centers horizontally */
   display: flex;
   align-items: center;      /* vertical */
   justify-content: center;  /* horizontal */
-  padding: 20px;
-  background: white;
+  padding-top: 50px;
+  background: rgb(0, 0, 0);
 }
 
 /* Screen shake animation */
@@ -45,3 +50,4 @@ body {
   animation: screenShake 0.5s;
   will-change: transform;
 }
+
