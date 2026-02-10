@@ -7,10 +7,12 @@ h1 {
 }
 
 
+
+
 .heart {
  
   margin-inline: auto;
-  width: clamp(150px, 60vh, 800px);
+  width: clamp(60px, 60vh, 1200px);
   display: flex;
   flex-direction: column;   /* top → bottom */
   align-items: center;      /* center horizontally */
@@ -21,8 +23,9 @@ h1 {
 }
 
 body {
-  margin: 35px;
-  overflow: hidden; /* prevents scrollbar during shake */
+  margin: 3vh;
+  overflow: hidden; /* prevents scrollbar */
+  
 }
 
 .screen {
@@ -32,9 +35,15 @@ body {
   display: flex;
   align-items: center;      /* vertical */
   justify-content: center;  /* horizontal */
-  padding-top: 50px;
+  padding-top: 90vh;
   background: #000000;
+  
 }
+
+
+
+
+
 
 /* Screen shake animation */
 @keyframes screenShake {
@@ -67,4 +76,14 @@ body {
   to {
     opacity: 100%;
   }
+}
+
+.boxes{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60vh;
+
 }
