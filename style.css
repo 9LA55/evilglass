@@ -12,7 +12,7 @@ h1 {
 .heart {
  
   margin-inline: auto;
-  width: clamp(60px, 60vh, 1200px);
+  width: clamp(60px, 55vh, 1200px);
   display: flex;
   flex-direction: column;   /* top → bottom */
   align-items: center;  
@@ -24,7 +24,7 @@ h1 {
 }
 
 body {
-  margin: 3vh;
+  margin: 4vh;
   overflow: hidden; /* prevents scrollbar */
   
 }
@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;      /* vertical */
   justify-content: center;  /* horizontal */
-  padding-top: 2vh;
+  padding-top: 3vh;
   background: #000000;
   
   
