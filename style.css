@@ -1,7 +1,8 @@
 h1 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 100;
-  font-size: 150px;
+  font-size: 10vw;
+  text-align: center;
 }
 
 
@@ -20,7 +21,6 @@ h1 {
 
 body {
   margin: 35px;
-  background: #000000;
   overflow: hidden; /* prevents scrollbar during shake */
 }
 
@@ -32,7 +32,7 @@ body {
   align-items: center;      /* vertical */
   justify-content: center;  /* horizontal */
   padding-top: 50px;
-  background: rgb(0, 0, 0);
+  background: #000000;
 }
 
 /* Screen shake animation */

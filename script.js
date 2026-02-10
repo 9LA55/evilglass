@@ -20,3 +20,22 @@ img.addEventListener("click", () => {
   void screen.offsetWidth; // force browser reflow
   screen.classList.add("shake-screen");
 });
+
+
+  
+const link = document.getElementById('delayedLink');
+
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 1500);
+  });
+
+window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      // Page was restored from bfcache
+      window.location.reload();
+    }
+  });
